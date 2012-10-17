@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+   <meta charset="utf-8"> 
+   
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta http-equiv="Content-Style-Type" content="text/css" /> 
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    
+    
+    
+    <link href="{{ static_url("css/bootstrap.min.css")}}" rel="stylesheet" type="text/css">
+   
+      <link href="{{ static_url("css/styles.css")}}" rel="stylesheet" type="text/css">
+   
+      <script src="{{ static_url("js/jquery-1.7.1.js")}}"></script> 
+      <script src="{{ static_url("js/protovis.min.js")}}"></script>
+    
+      <script src="{{ static_url("js/utility.js")}}"></script>   
+    
+    
+    {#
+    
+    <link href="{{ static_url("css/jquery-preview.css")}}" rel="stylesheet" type="text/css">
+    
+    <script src="{{ static_url("js/jquery-1.7.1.js")}}"></script>   
+    <script src="{{ static_url("js/jquery-ui.min.js")}}"></script>   
+    
+    
+    <!-- include all the boostraps -->
+    <script src="{{ static_url("js/bootstrap/bootstrap-twipsy.js")}}"></script>   
+    <script src="{{ static_url("js/bootstrap/bootstrap-alerts.js")}}"></script>   
+    <script src="{{ static_url("js/bootstrap/bootstrap-buttons.js")}}"></script>   
+    <script src="{{ static_url("js/bootstrap/bootstrap-dropdown.js")}}"></script>   
+    <script src="{{ static_url("js/bootstrap/bootstrap-modal.js")}}"></script>   
+    <script src="{{ static_url("js/bootstrap/bootstrap-popover.js")}}"></script>   
+    <script src="{{ static_url("js/bootstrap/bootstrap-scrollspy.js")}}"></script>   
+    <script src="{{ static_url("js/bootstrap/bootstrap-tabs.js")}}"></script>   
+    
+    <script src="{{ static_url("js/embedly/jquery.preview.full.js")}}"></script>   
+    
+    <script src="{{ static_url("js/jquery.tablesorter.min.js")}}"></script>   
+    
+    
+    
+    <script src="{{ static_url("js/utilities.js")}}"></script>   
+    
+    #}
+               
+            
+       
+    
+    
+    
+    
+    <title>starwatch captain: {% block headertitle %}{% end %}</title>
+    
+    
+    {% block extra_header %}{% end %}
+    
+    
+</head>
+
+<body class="{% block body_class %}{% end %}">
+   
+   {% include "nav.tmpl" %}
+   
+   
+   <input type="hidden" value="{{API_URL}}" id="api_root" />
+   
+
+   
+   <div class="container post-nav-spacing">
+      <header class="jumbotron subhead" id="overview">
+         <h1>{% block title %}{% end %}</h1>
+      </header>
+   
+   
+      <section>
+         {% block content %} {% end %}
+      </section>
+   </div>
+   
+</body>
+</html>

@@ -1,0 +1,98 @@
+
+{% extends "base.tmpl" %}
+
+
+{% block extra_header %}
+
+
+{% end %}
+
+{% block body_class %}index{% end %}
+
+{% block title %}
+   <h1>Device Summary</h1>
+{% end %}
+
+
+{% block content %}
+
+
+   <div id="device_count"></div>
+    
+
+
+   <div class="row">
+        <div class="span3"><h2>iOS Versions</h2></div>
+       
+         {# iOS Versions #}
+         <div class="span9">
+             <div class="activity_table">
+                 <table class="table index device-ios_version table-condensed table-striped  table-bordered">
+                  <thead>
+                      <th>iOS Version</th>
+                      <th># Devices</th>
+                      <th>%</th>
+                  </thead>
+                 </table>
+              </div>
+          </div>
+    </div>
+    
+    <div class="row">
+      <div class="span3"><h2>Timezones</h2></div>
+      
+       {# Timezones #}
+       <div class="span9">
+           <div class="activity_table">
+               <table class="table index device-timezones table-condensed table-striped  table-bordered">
+                <thead>
+                    <th>Timezone</th>
+                    <th># Devices</th>
+                    <th>%</th>
+                </thead>
+               </table>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="row">
+      <div class="span3"><h2>Device Types</h2></div>
+      
+       {# Device Types #}
+       <div class="span9">
+           <div class="activity_table">
+               <table class="table index device-types table-condensed table-striped  table-bordered">
+                <thead>
+                    <th>Type</th>
+                    <th># Devices</th>
+                    <th>%</th>
+                </thead>
+               </table>
+            </div>
+        </div>
+    </div>
+    
+   
+    <div class="row">
+       <div class="span3"><h2>Device Flavors</h2></div>
+
+        {# Device Types #}
+        <div class="span9">
+            <div class="activity_table">
+                <table class="table index device-versions table-condensed table-striped  table-bordered">
+                 <thead>
+                     <th>Type</th>
+                     <th># Devices</th>
+                     <th>%</th>
+                 </thead>
+                </table>
+             </div>
+         </div>
+     </div>
+   
+   
+   
+   
+
+{% end %}

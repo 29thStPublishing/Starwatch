@@ -1,0 +1,87 @@
+
+{% extends "base.tmpl" %}
+
+
+{% block extra_header %}
+
+
+{% end %}
+
+{% block body_class %}index{% end %}
+
+{% block title %}
+   <h1>Summary</h1>
+{% end %}
+
+{% block content %}
+
+    <div class="row details">
+        <div class="span3">
+            <p class="overall-num_sessions"></p>
+         </div>
+         <div class="span3">
+             <p class="overall-total_usage_time"></p>
+          </div>
+    </div>
+
+
+   <div class="row">
+        <div class="span3"><h2>Recent Actvity</h2></div>
+       
+       <div class="span9">
+           <div class="activity_table">
+               <table class="table index sessions table-condensed table-striped  table-bordered">
+                <thead>
+                    <th>Session</th>
+                    <th>Device</th>
+                    <th>Start Time</th>
+                    <th>Total Usage in Seconds</th>
+                </thead>
+               </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row header">
+    <div class="span12"><h3>App Averages</h3></div>
+    </div>
+    
+    <div class="row">
+        <div class="span2"><h2>Rotations</h2></div>
+            <div class="span4">
+                 <ul class="overall-average_number_rotations"></ul>
+           </div>
+           <div class="span2"><h2>Usage Time</h2></div>
+           <div class="span4">
+               <ul class="overall-average_usage_time"></ul>
+          </div>
+    </div>
+    
+        <div class="row">
+
+            <div class="span2"><h2>Orientation</h2></div>
+            <div class="span4">
+                 <div id="average-orientation" class="small fig"></div>
+            </div>
+            
+           
+            <div class="span2">
+                 <h2>Device Types</h2>
+                 <p>For each session recorded, this is the device ratio.</p>
+              </div>
+              <div class="span4">
+                   <div id="average-device-type" class="small fig"></div>
+              </div>
+            
+        </div>
+  
+  
+         <div class="row">
+
+              
+
+          </div>
+     
+   
+
+{% end %}

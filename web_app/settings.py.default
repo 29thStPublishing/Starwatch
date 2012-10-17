@@ -1,0 +1,33 @@
+import os
+
+PORT = 8000
+APP_DOMAIN = "http://127.0.0.1"
+APP_URL = ("%s:%d" % (APP_DOMAIN, PORT))
+ADMIN_URL = ("%s" % APP_URL)
+API_URL = ("%s/api" % APP_URL)
+ASSET_URL = ("%s/assets/" % APP_URL)
+
+
+
+MONGO_SETTINGS = {
+    # STATS COLLECTION INFORMATION
+    'host': '123456789.mongolab.com',
+    'port': 123456,
+    'db_name': 'db_name',
+    'username': 'username',
+    'password': 'password',
+    
+    
+    ### COLLECTION DEFINITIONS ###
+    # The left side of these assignments
+    # should match what you've defined in mongo
+    # as collection names.  
+    'stats_log':        'log',
+    'stats_session':    'session',
+    'stats_view':       'view',
+    'stats_device':     'device',
+    'stats_feedback':   'feedback',
+
+    
+
+}

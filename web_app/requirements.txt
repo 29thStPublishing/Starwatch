@@ -1,0 +1,4 @@
+tornado==1.0
+pymongo==1.0
+json==1.0
+simplejson==1.0

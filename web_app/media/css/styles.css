@@ -1,0 +1,122 @@
+
+/***************************
+* Copyright (c) 2012 29th Street Publishing, LLC.
+* All rights reserved.
+*
+* Redistribution and use in source and binary forms, with or without
+* modification, are permitted provided that the following conditions are met:
+*
+* * Redistributions of source code must retain the above copyright notice,
+*   this list of conditions and the following disclaimer.
+*
+* * Redistributions in binary form must reproduce the above copyright notice,
+*   this list of conditions and the following disclaimer in the documentation
+*   and/or other materials provided with the distribution.
+*
+* * Neither the name of 29th Street Publishing, LLC nor the names of its contributors may
+*   be used to endorse or promote products derived from this software without
+*   specific prior written permission.
+*
+* THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+* AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+* IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+* ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+* LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+* CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+* SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+* INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+* CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+* ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+* POSSIBILITY OF SUCH DAMAGE.
+******************************/
+
+body {
+   font-size: 18px;
+}
+
+.post-nav-spacing { 
+    margin-top: 60px;
+}
+
+.fig{
+    overflow:hidden !important;
+    text-align:center;
+    margin:15px auto 10px auto;
+    display:block !important;
+}
+
+#fig.large{
+    width:650px;
+}
+
+#fig.small{
+    width:300px;
+}
+
+h2{
+    color:#999;
+    font-weight:300;
+    font-size:24px;
+    line-height:30px;
+}
+
+body.device .row, body.session .row, body.index .row{
+    margin-top:35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+body.device .row:hover, body.session .row:hover, body.index .row:hover{
+    background:#efefef;
+}
+
+body.device .row.details, body.session .row.details, body.index .row.details{
+    margin-top:0;
+}
+
+body.device .row.top, body.session .row.top, body.index .row.top{
+    margin-top:5px;
+}
+
+body.device .row.details, body.session .row.details, body.index .row.details{
+    background:transparent;
+}
+
+.row.header{
+    margin-bottom:-35px;
+}
+
+.row.header:hover{
+    background:transparent !important;
+}
+
+body.device p, body.session p, body.index p{
+    line-height:35px;
+    font-size:15px;
+}
+
+body.device .row.details p, body.session .row.details p, body.index .row.details p{
+    line-height:18px;
+    font-size:13px;
+}
+
+
+h3{
+
+}
+
+body.index .activity_table{
+    max-height:350px !important;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+.activity_table{
+    max-height:275px !important;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
